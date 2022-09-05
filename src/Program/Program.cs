@@ -71,4 +71,16 @@ namespace Full_GRASP_And_SOLID
             return query.FirstOrDefault();
         }
     }
+
+    /*
+        Se pide crear la Clase ConsolePrinter para que se pueda cumplir con el principio de
+        SRP dado que antes recipe tenia mas que una responsabilidad al imprimirse por si sola,
+        ahora con esta clase la responsabilidad se divide en distintas clases y hace el codigo mas escalable.
+
+        Tambien creo que cumple con Expert dado que cada clase tiene la responsabiolidad segun la la informacion que tiene
+        un gran ejemplo es la clase ConsolePrinter, tiene la informacion necesaria e improtante para imprimir las recetas. 
+
+
+
+    */
 }
