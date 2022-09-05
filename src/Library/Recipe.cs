@@ -20,11 +20,19 @@ namespace Full_GRASP_And_SOLID.Library
             this.steps.Add(step);
         }
 
+        public ArrayList GetStep()
+        {
+            return this.steps;
+        }    
+
+        // Agrego GetStep a Recipe para que pueda obtener los pasos 
+
         public void RemoveStep(Step step)
         {
             this.steps.Remove(step);
         }
 
+        /*
         public void PrintRecipe()
         {
             Console.WriteLine($"Receta de {this.FinalProduct.Description}:");
@@ -34,5 +42,9 @@ namespace Full_GRASP_And_SOLID.Library
                     $"usando '{step.Equipment.Description}' durante {step.Time}");
             }
         }
+
+        */
+
+        // Este metodo lo paso a la nueva clase creada de ConsolePrinter
     }
 }
